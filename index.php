@@ -422,7 +422,7 @@
                 $aforismi2 = "\"Nuoressa ei huilaaminen mene hukkaan.\"";
                 $aforismi3 = "\"Nuoret ovat säännöllisesti ajattelemattomia.\"";
 
-                // Näytetään aforismit yhdellä echo-komennolla
+
                 echo "
   <p><span class='aforismi'>$aforismi1</span> - Benjamin Franklin</p>
   <p><span class='aforismi'>$aforismi2</span> - Suomalainen sananlasku</p>
@@ -537,6 +537,7 @@
       </pre>
                     </div>
                 </div>
+                
 
                 <?php
                 // Aforismit ja nimet taulukkoon
@@ -1464,6 +1465,400 @@
                     ?>
                 </div>
             </section>
+            <!-- task 21  -->
+             <!-- Task 21 -->
+<section class="my-section" id="task21">
+    <h2>Tehtävä 21</h2>
+
+    <!-- Button to open the modal -->
+    <button id="task21Btn" class="question-btn">View Question</button>
+
+    <!-- Modal Structure -->
+    <div id="task21Modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Tehtävä 21</h3>
+
+            <!-- Using <pre> to show unsolved PHP code -->
+            <pre>
+                &lt;?php
+                // For-loop to display numbers from 10 down to 1
+                for ($i = 10; $i >= 1; $i--) {
+                    echo "Number is: $i &lt;br&gt;";
+                }
+                ?&gt;
+            </pre>
+        </div>
+    </div>
+
+    <!-- Example output content -->
+    <div class="esimerkki koodisini">
+        <?php
+        // For-loop to display numbers from 10 down to 1
+        for ($i = 10; $i >= 1; $i--) {
+            echo "Number is: $i <br>";
+        }
+        ?>
+    </div>
+</section>
+
+             <!-- Task 22 -->
+<section class="my-section" id="task22">
+    <h2>Tehtävä 22</h2>
+
+    <!-- Button to open the modal -->
+    <button id="task22Btn" class="question-btn">View Question</button>
+
+    <!-- Modal Structure -->
+    <div id="task22Modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Tehtävä 22</h3>
+
+            <!-- Using <pre> to show unsolved PHP code -->
+            <pre>
+                &lt;?php
+                // For-loop to display numbers from 0 to 500, incrementing by 50 each time
+                for ($i = 0; $i <= 500; $i += 50) {
+                    echo "Number is: $i &lt;br&gt;";
+                }
+                ?&gt;
+            </pre>
+        </div>
+    </div>
+
+    <!-- Example output content -->
+    <div class="esimerkki koodisini">
+        <?php
+        // For-loop to display numbers from 0 to 500, incrementing by 50 each time
+        for ($i = 0; $i <= 500; $i += 50) {
+            echo "Number is: $i <br>";
+        }
+        ?>
+    </div>
+</section>
+<!-- Task 23 -->
+<section class="my-section" id="task23">
+    <h2>Tehtävä 23</h2>
+
+    <!-- Button to open the modal -->
+    <button id="task23Btn" class="question-btn">View Question</button>
+
+    <!-- Modal Structure -->
+    <div id="task23Modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Tehtävä 23</h3>
+
+            <!-- Using <pre> to show unsolved PHP code -->
+            <pre>
+                &lt;?php
+                //  suomenkielen aakkoset järjestyksessä.
+                $alphabet = [
+                    'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 
+                    'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 
+                    'å', 'ä', 'ö'
+                ];
+
+                // For-loop to display each letter
+                for ($i = 0; $i &lt; count($alphabet); $i++) {
+                    echo $alphabet[$i] . "&lt;br&gt;";
+                }
+                ?&gt;
+                </pre>
+        </div>
+    </div>
+
+    <!-- Example output content -->
+    <div class="esimerkki koodisini">
+        <?php
+        // Finnish alphabet
+        $alphabet = [
+            'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 
+            'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 
+            'å', 'ä', 'ö'
+        ];
+
+        // For-loop to display each letter
+        for ($i = 0; $i < count($alphabet); $i++) {
+            echo $alphabet[$i] . "<br>";
+        }
+        ?>
+    </div>
+</section>
+
+<!-- Task 24 -->
+<section class="my-section" id="task24">
+    <h2>Tehtävä 24</h2>
+
+    <!-- Button to open the modal -->
+    <button id="task24Btn" class="question-btn">View Question</button>
+
+    <!-- Modal Structure -->
+    <div id="task24Modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Tehtävä 24</h3>
+
+            <!-- Using <pre> to show unsolved PHP code -->
+            <pre>
+&lt;?php
+// Finnish alphabet
+$alphabet = [
+    'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 
+    'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 
+    'å', 'ä', 'ö'
+];
+
+// For-loop to display each letter in 5-letter rows
+for ($i = 0; $i &lt; count($alphabet); $i++) {
+    // Print letter
+    echo $alphabet[$i] . " ";
+
+    // New line after every 5 letters
+    if (($i + 1) % 5 == 0) {
+        echo "&lt;br&gt;";
+    }
+}
+?&gt;
+            </pre>
+        </div>
+    </div>
+
+    <!-- Example output content -->
+    <div class="esimerkki koodisini">
+        <?php
+        // Finnish alphabet
+        $alphabet = [
+            'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 
+            'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 
+            'å', 'ä', 'ö'
+        ];
+
+        // For-loop to display each letter in 5-letter rows
+        for ($i = 0; $i < count($alphabet); $i++) {
+            // Print letter
+            echo $alphabet[$i] . " ";
+
+            // New line after every 5 letters
+            if (($i + 1) % 5 == 0) {
+                echo "<br>";
+            }
+        }
+        ?>
+    </div>
+</section>
+<!-- task 25  -->
+<section class="my-section CSSTableGenerator" id="task25">
+    <h2>Tehtävä 25</h2>
+
+    <!-- Button to open the modal -->
+    <button id="task25Btn" class="question-btn">View Question</button>
+
+    <!-- Modal Structure -->
+    <div id="task25Modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Tehtävä 25 Question</h3>
+
+            <!-- Using <pre> to show unsolved PHP code -->
+            <pre>
+&lt;?php
+// Define the 4x7 table with names and scores
+$taulu = array(
+    array("Nimi", "Koe 1", "Koe 2", "Koe 3", "Koe 4", "Yht.", "Arvosana"),
+    array("Ykkönen Alli", 30, 40, 50, 60, 0, 0),
+    array("Kakkonen Bertta", 40, 50, 60, 70, 0, 0),
+    array("Kolmonen Carita", 50, 60, 70, 80, 0, 0)
+);
+
+// Display the table content using nested for loops
+for ($rivi = 0; $rivi &lt; count($taulu); $rivi++) {
+    for ($sarake = 0; $sarake &lt; count($taulu[$rivi]); $sarake++){
+        echo " " . $taulu[$rivi][$sarake] . " ";
+    }
+    echo "&lt;br&gt;";
+}
+?&gt;
+            </pre>
+        </div>
+    </div>
+
+    <!-- Example output content -->
+    <div class="esimerkki koodisini">
+        <?php
+        // Define the 4x7 table with names and scores
+        $taulu = array(
+            array("Nimi", "Koe 1", "Koe 2", "Koe 3", "Koe 4", "Yht.", "Arvosana"),
+            array("Ykkönen Alli", 30, 40, 50, 60, 0, 0),
+            array("Kakkonen Bertta", 40, 50, 60, 70, 0, 0),
+            array("Kolmonen Carita", 50, 60, 70, 80, 0, 0)
+        );
+
+        // Display the table content using nested for loops
+        for ($rivi = 0; $rivi < count($taulu); $rivi++) {
+            for ($sarake = 0; $sarake < count($taulu[$rivi]); $sarake++){
+                echo " " . $taulu[$rivi][$sarake] . " ";
+            }
+            echo "<br>";
+        }
+        ?>
+    </div>
+</section>
+
+<!-- task 26  -->
+
+<section class="my-section CSSTableGenerator" id="task26">
+    <h2>Tehtävä 26</h2>
+
+    <!-- Button to open the modal -->
+    <button id="task26Btn" class="question-btn">View Question</button>
+
+    <!-- Modal Structure -->
+    <div id="task26Modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Tehtävä 26 Question</h3>
+
+            <!-- Using <pre> to show unsolved PHP code -->
+            <pre>
+&lt;?php
+  // Initialize the variable 'numero' with 10
+  $numero = 10;
+
+  // Use a while loop to count down from 10 to 1
+  while ($numero >= 1) {
+    echo "Numero on: $numero &lt;br&gt;";
+    $numero--;
+  }
+?&gt;
+            </pre>
+        </div>
+    </div>
+
+    <!-- Example output content -->
+    <div class="esimerkki koodisini">
+        <?php
+        // Initialize the variable 'numero' with 10
+        $numero = 10;
+
+        // Use a while loop to count down from 10 to 1
+        while ($numero >= 1) {
+            echo "Numero on: $numero <br>";
+            $numero--;
+        }
+        ?>
+    </div>
+</section>
+<!-- task 27  -->
+<section class="my-section CSSTableGenerator" id="task27">
+    <h2>Tehtävä 27</h2>
+
+    <!-- Button to open the modal -->
+    <button id="task27Btn" class="question-btn">View Question</button>
+
+    <!-- Modal Structure -->
+    <div id="task27Modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Tehtävä 27 Question</h3>
+
+            <!-- Using <pre> to show unsolved PHP code -->
+            <pre>
+&lt;?php
+  // Table with cell names A-F and corresponding names
+  $table = array(
+      "A" => "Anthony",
+      "B" => "Bertha",
+      "C" => "Cecilia",
+      "D" => "David",
+      "E" => "Edward",
+      "F" => "Felicia"
+  );
+
+  // Initialize the variable 'nimi' to start from 'A'
+  $nimi = 'A';
+
+  // Use a do...while loop to display names from 'A' to the letter in 'nimi'
+  do {
+    echo $table[$nimi] . "&lt;br&gt;";
+    $nimi++;
+  } while ($nimi <= 'F');
+?&gt;
+            </pre>
+        </div>
+    </div>
+
+    <!-- Example output content -->
+    <div class="esimerkki koodisini">
+        <?php
+        // Table with cell names A-F and corresponding names
+        $table = array(
+            "A" => "Anthony",
+            "B" => "Bertha",
+            "C" => "Cecilia",
+            "D" => "David",
+            "E" => "Edward",
+            "F" => "Felicia"
+        );
+
+        // Initialize the variable 'nimi' to start from 'A'
+        $nimi = 'A';
+
+        // Use a do...while loop to display names from 'A' to the letter in 'nimi'
+        do {
+            echo $table[$nimi] . "<br>";
+            $nimi++;
+        } while ($nimi <= 'F');
+        ?>
+    </div>
+</section>
+<!-- task 28  -->
+<section class="my-section" id="task28">
+    <h2>Tehtävä 28</h2>
+
+    <!-- Button to open the modal -->
+    <button id="task28Btn" class="question-btn">View Question</button>
+
+    <!-- Modal Structure -->
+    <div id="task28Modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Tehtävä 28 Question</h3>
+
+            <!-- Using <pre> to show unsolved PHP code -->
+            <pre>
+&lt;?php
+  for ($numero = 0; $numero <= 10; $numero++) {
+    echo "Näytetään numero $numero. &lt;br&gt;";
+    
+    if ($numero >= 0 && $numero <= 4 || $numero >= 8 && $numero <= 10) {
+      echo "Tämä näkyy &lt;br&gt;";
+    }
+  }
+?&gt;
+            </pre>
+        </div>
+    </div>
+
+    <!-- Example output content -->
+    <div class="esimerkki koodisini">
+        <?php
+        for ($numero = 0; $numero <= 10; $numero++) {
+            echo "Näytetään numero $numero. <br>";
+            
+            if ($numero >= 0 && $numero <= 4 || $numero >= 8 && $numero <= 10) {
+                echo "Tämä näkyy <br>";
+            }
+        }
+        ?>
+    </div>
+</section>
+
+
+
+
+
 
 
 
